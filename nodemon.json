@@ -1,0 +1,15 @@
+{
+	"ignore": [
+		"data/*",
+		"README.md",
+		".gitignore",
+		".vscode/*",
+		".env",
+		"package.json",
+		"node_modules/*",
+		"logs/*",
+		"temp/*",
+		"dist/*",
+		"build/*"
+	]
+}

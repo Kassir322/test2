@@ -2,6 +2,8 @@ const { getUser, updateUser } = require('./database')
 const { getMainMenu, getBackToMenuButton } = require('../utils/keyboards')
 
 async function startCommand(ctx) {
+	console.log('startCommand')
+
 	const userId = ctx.from.id
 	const userName = ctx.from.first_name || 'Друг'
 
@@ -21,6 +23,7 @@ async function startCommand(ctx) {
 💡 Начни с добавления своей первой привычки!
     `
 
+	console.log('welcomeMessage')
 	await ctx.reply(welcomeMessage, {
 		reply_markup: getMainMenu(),
 	})
